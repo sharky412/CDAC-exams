@@ -1,3 +1,5 @@
+
+
 create table OS(OS_ID int primary key, OS_Name varchar(20));
 insert into OS values(1,"Android"),(2,"IOS"),(3,"Windows");
 select * from OS;
