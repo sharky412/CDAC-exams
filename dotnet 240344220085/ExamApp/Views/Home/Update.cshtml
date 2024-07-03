@@ -1,0 +1,63 @@
+﻿
+@model ExamApp.Models.user
+<html>
+<head>
+    <title>Update Record</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form action="/Home/AfterUpdate" method="post">
+        <div class="container" style="margin:70px">
+            <br />
+            <center>
+                <div class="table-responsive">
+                    <input type="hidden" name="Id" value="@Model.id" />
+                    <table class="table table-bordered text-center">
+                        <tbody>
+                            <tr>
+                                <td>user Name</td>
+                                <td>
+                                    <input type="text" name="name" value="@Model.name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>
+                                    <input type="text" name="email" value="@Model.email" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mobile</td>
+                                <td>
+                                    <input type="number" name="mobile" value="@Model.mobile" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>password</td>
+                                <td>
+                                    <input type="number" name="password" value="@Model.password" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>role</td>
+                                <td>
+                                    <input type="text" name="role" value="@Model.role" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input type="submit" name="btnUpdate" value="Save Changes" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+    </form>
+</body>
+</html>
