@@ -46,14 +46,14 @@ java exam.Main
 g++ q1.cpp -o q1 && ./q1
 ```
 
-**Core Java + JDBC:** import `exam_83998/` into Eclipse, add the MySQL Connector/J driver, set your database details in `src/com/util/Db.java`, and run `test.tester`.
+**Core Java + JDBC:** import `exam_83998/` into Eclipse, add the MySQL Connector/J driver, set the `DB_PASSWORD` environment variable (and optionally `DB_URL`, default `jdbc:mysql://localhost:3306/java`, and `DB_USER`, default `root`) in the run configuration, and run `test.tester`.
 
-**React + Express app:** the back end needs a MySQL database with a `Customer_TB` table; set your connection details in `backend/db.js`.
+**React + Express app:** the back end needs a MySQL database with a `Customer_TB` table. Copy `MERN Application/backend/.env.example` to `MERN Application/backend/.env` and fill in your connection details (`DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`).
 
 ```bash
 # back end (port 4002)
 cd "MERN Application/backend"
-npm install express cors mysql2
+npm install express cors mysql2 dotenv
 node server.js
 
 # front end

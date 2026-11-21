@@ -1,12 +1,13 @@
+require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 const mysql = require('mysql2');
 
 // Create the connection pool. The pool-specific settings are the defaults
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '***REMOVED***',
-  port: '3306',
-  database: 'exam',
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT || '3306',
+  database: process.env.DB_NAME || 'exam',
   waitForConnections: true,
   connectionLimit: 10,
   maxIdle: 10, // max idle connections, the default value is the same as `connectionLimit`
