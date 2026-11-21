@@ -10,6 +10,7 @@ My solved answers to the CDAC lab exams from 2024. Each folder or file is a sepa
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
 ![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## What's inside
 
@@ -67,3 +68,7 @@ npm start
 cd "dotnet 240344220085/ExamApp"
 dotnet run
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).
