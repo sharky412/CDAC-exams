@@ -1,0 +1,8 @@
+# Compiled Java output
+exam_83998/bin/
+
+# Local environment files
+.env
+
+# Dependencies
+node_modules/
